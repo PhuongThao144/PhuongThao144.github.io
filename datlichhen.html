@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tư Vấn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding-top: 70px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+        button {
+            background-color:gainsboro;
+            color: white;
+            padding: 16px 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        button:hover {
+            background-color:rgb(0, 0, 0);
+            color: aliceblue;
+        }
+        #caulenh {
+            display: none;
+            color: #000000;
+            margin-top: 80px;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            padding-top: 80px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40px;
+            line-height: 40px;
+        }
+/* nav */
+       /* nav */
+       nav{
+            background-color: whitesmoke;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            border-radius: 10px;
+            border-bottom: 2px black;
+        }
+        nav ul {
+            list-style-type: none;
+        }
+        nav ul  li {
+            float: left;
+            padding-right: 2%;
+        }
+        nav ul  li:first-child{
+            margin-left: 7%;
+        }
+        nav ul li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            padding: 20px 24px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color:#E6E6FA;
+            color: black;
+            font-weight: 540;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="tc.html">Trang Chủ</a></li>
+            <li><a href="dv.html">Dịch Vụ</a></li>
+            <li><a href="datlichhen.html">Đặt Lịch Hẹn</a></li>
+            <li><a href="ql.html">Quản lý lịch hẹn</a></li>
+            <li><a href="lienhe.html">Thông Tin Liên Hệ</a></li>
+            <li style="float: right;margin-right: 5%"><a href="#">Đăng Ký</a></li>
+            <li style="float: right;"><a href="#">Đăng Nhập</a></li>
+        </ul>
+    </nav>
+
+
+    <h2>Đăng ký đặt lịch</h2>
+
+    <form id="consultation-form" onsubmit="submitForm(event)">
+        <label for="fullName">Họ và Tên:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="phone">Số Điện Thoại:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="address">Địa Chỉ:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="address">Vui lòng nhập dịch vụ bạn cần đặt lịch: </label>
+        <input type="text" id="address" name="address" required>
+
+        <button type="submit">Đặt lịch</button>
+    </form>
+
+    <p id="caulenh">Cảm ơn bạn đã đặt lịch! Chúng tôi sẽ liên hệ cho bạn trong thời gian sớm nhất có thể.</p>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); 
+            document.getElementById('caulenh').style.display = 'block';
+
+     
+        }
+    </script>
+
+</body>
+</html>
