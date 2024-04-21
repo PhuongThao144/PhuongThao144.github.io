@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+/* nav */
+        nav{
+            background-color: whitesmoke;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            border-radius: 10px;
+            border-bottom: 2px black;
+        }
+        nav ul {
+            list-style-type: none;
+        }
+        nav ul  li {
+            float: left;
+            padding-right: 2%;
+        }
+        nav ul  li:first-child{
+            margin-left: 7%;
+        }
+        nav ul li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            padding: 20px 24px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color:#E6E6FA;
+            color: black;
+            font-weight: 540;
+        }
+/* header */
+        header{
+            background:#E6E6FA;
+            width: 100%;
+            height: 300px;
+            border-bottom: 2px groove;
+            display: flex;
+            justify-content: space-between;
+    align-items: center;
+        }
+        .lg img{
+            height: 200px;
+            width: 250px;
+            margin-top: 60px;
+            margin-left: 100px;
+        }
+
+    .tk input{
+        width: 500px;
+        height: 50px;
+        border-radius:10px ;
+        margin-top: 50px;
+        margin-right: 300px;
+        
+    }
+       
+/* section */
+        section {   
+            width: 100%;
+            text-align: center;
+        }
+        section img{ height: 500px;}
+/* article */
+h1{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+        article {
+          
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        article div {
+            background-color:whitesmoke;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 90%;
+            margin: 10px 0px  0px 150px;
+        }
+        article div img {
+            width: 50%;
+        }
+        article h1{
+            margin-bottom: 10px;
+        }
+        article div h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+        article div p {
+            color: #666;
+        }
+        article a{
+            text-decoration: none;
+        }
+        article div:hover {
+         background-color: #666; 
+        }
+        ul.vmenu{
+            border-radius:5px;
+            box-shadow:0 0 10px orangered; list-style:none;}
+    
+            ul.vmenu>li>a {
+            display: block;
+            line-height:30px;
+            border-bottom: 1px dotted orangered; text-decoration: none; 
+            color: orangered; padding-left: 25px;}
+
+     /* footer */        
+     footer {
+            height: 300px;
+            background-color: #E6E6FA; 
+            color: blue; 
+            border-top: 2px black solid;
+            width: 80%;
+            padding-left: 10%;
+            padding-right: 10%;
+            display: flex;
+            align-items:center;
+        }
+        
+      
+        footer h3 {
+            color: #000000; 
+           
+        }
+        footer img {
+            width: 30px;
+            margin-right: 10px;
+        }
+        footer a{
+            text-decoration: none;
+            color:blue;
+            
+        }
+       
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="tc.html">Trang Chủ</a></li>
+            <li><a href="dv.html">Dịch Vụ</a></li>
+            <li><a href="datlichhen.html">Đặt Lịch Hẹn</a></li>
+            <li><a href="ql.html">Quản lý lịch hẹn</a></li>
+            <li><a href="lienhe.html">Thông Tin Liên Hệ</a></li>
+            <li style="float: right;margin-right: 5%"><a href="#">Đăng Ký</a></li>
+            <li style="float: right;"><a href="#">Đăng Nhập</a></li>
+        </ul>
+    </nav>
+
+  
+        <h1 style="margin-top: 100px;"><b>DỊCH VỤ - TIỆN ÍCH</b></h1>
+    <article>
+        <div >
+            <img src="https://vcdn1-dulich.vnecdn.net/2022/07/29/hypat-1659069584-1659081355-1659095800.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=DOVzqNrlo-W0PARbtYdxWw" >
+            <h2>ĐẶT LỊCH KHÁCH SẠN</h2>
+            
+        </div>
+
+  
+        <div >
+            <img src="https://homepage.momocdn.net/img/momo-upload-api-211014103142-637698043027982617.jpg" >
+            <h2>ĐẶT LỊCH TÀU ĐIỆN</h2>
+            
+        </div>
+  
+        <div>
+            <img src="https://vienhuyethoc.vn/wp-content/uploads/2022/09/Dat-lich-hen-kham-Vien-Huyet-hoc-9-22-1024x628.jpg">
+            <h2>ĐẶT LỊCH HẸN KHÁM BỆNH</h2>
+        </div><br>
+        <div>
+            <img src="https://statics.vinpearl.com/kinh-nghiem-dat-ve-may-bay-5_1630647870.png" alt="">
+            <h2>ĐẶT LỊCH BAY</h2>
+        </div>
+        <div>
+            <img src="https://nqmedical.vn/wp-content/uploads/2023/09/spa-lam-dep-6.jpg" alt="">
+            <h2>ĐẶT LỊCH LÀM ĐẸP/SAPA</h2>
+        </div>
+        <div>
+            <img src="https://media.tapchitaichinh.vn/w1480/images/upload/2023/12/26/thi-truong-bat-dong-san-2023-2024-min-15-07-2023-16-37-02-24122023104527-105.jpg">
+            <h2>BẤT ĐỘNG SẢN</h2>
+        </div><br>
+        <div>
+            <img src="https://www.cet.edu.vn/wp-content/uploads/2018/02/phan-loai-nha-hang.jpg">
+            <h2>ĐẶT NHÀ HÀNG/ ĂN UỐNG</h2>
+        </div>
+        <div>
+            <img src="https://image.congan.com.vn/thumbnail/CATP-4013-2021-12-9/c0cff409-9ca6-4ef2-9dbf-0f9e5604f25b_4013_2408_543.jpeg">
+            <h2>ĐẶT LỊCH HẸN SỬA CHỮA ĐỒ DA DỤNG, XE CỘ</h2>
+        </div>
+        <div>
+            <img src="https://cv.com.vn/blog/wp-content/uploads/2020/11/chia-se-kinh-nghiem-dat-tour-du-lich-uy-tin-gia-re-tai-ha-noi-3.jpg" >
+            <h2>ĐẶT TOUR DU LỊCH</h2>
+        </div>
+       
+    </article>
+        <hr><br>
+        <h1><b>TÍNH NĂNG TIỆN LỢI</b></h1>
+    <article>
+        <ul class="vmenu">
+            <li><a href="1.htm1">MIỄN PHÍ HUỶ LỊCH</a></1i > 
+                <li><a href="2.htm1">TÍCH XU, TÍCH ĐIỂM SAU MỖI LẦN GIAO DỊCH</a></li > 
+                <li><a href="3.htm1" >DỄ DÀNG ĐỔI LỊCH</a></1i > 
+                    <li><a href="4.htm1">REVIEW CHÂN THỰC</a></1i>
+                    <li><a href="5.htm1">HỖ TRỢ 24/7</a></1i > 
+                       
+            </ul>  
+    </article>
+    <hr><br>
+
+    <footer>
+        <div>
+            <div>
+                <h3>Về Chúng Tôi</h3>
+                <p>Chúng tôi xin cam kết phục vụ những dịch vụ uy tín, chất lượng cao, đáp ứng mọi nhu cầu của bạn.</p>
+                <a href="#">Địa chỉ: Trường Quốc tế-ĐHQG HN, xã Thạch Hoà, huyện Thạch Thất, Hà Nội</p></a>
+            </div>
+            <div>
+                <h3>Liên Kết Hữu Ích</h3>
+                <ul style="list-style-type: none;">
+                    <li><a href="#">Hướng dẫn đặt lịch hẹn</a></li>
+                    <li><a href="#">Chính sách hỗ trợ thanh toán nhanh</a></li>
+                    <li><a href="#">Dịch vụ khách hàng</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <div>
+            <h3>Theo Dõi Chúng Tôi trên mạng xã hội:</h3><br>
+            <div>
+            <a href="https://www.facebook.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook"> 
+            <a href="https://youtobe.com/example" target="_blank"><img src="https://play-lh.googleusercontent.com/76AjYITcB0dI0sFqdQjNgXQxRMlDIswbp0BAU_O5Oob-73b6cqKggVlAiNXQAW5Bl1g" alt="youtobe"> 
+            <a href="https://www.instagram.com/example" target="_blank"><img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-three-dimensional-instagram-icon-png-image_9015419.png" alt="Instagram"> 
+            <a href="https://www.Twitter.com/example" target="_blank"><img src="https://cdn.freebiesupply.com/logos/thumbs/2x/twitter-3-logo.png"alt="Twitter">
+            </div>
+            </div>
+            <h3>Liên Hệ</h3>
+            Email:<a href="#"><p> info@datlichhen.com</p></a>
+            Điện thoại:<a href="#"><p> (+84) 123 456 789</p></a>
+            </div>
+             
+        </div>
+    </footer> 
+</body>
+</html>
